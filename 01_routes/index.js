@@ -11,9 +11,9 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.get('/contact', (req, res) => {                                     /* start=1 */
-  res.send('BBZ Biel, Wasenstrasse 5, 2502 Biel');                      /* start=1 */
-});                                                                     /* start=1 */
+app.get('/contact', (req, res) => {                                     /* start=2 */
+  res.send('BBZ Biel, Wasenstrasse 5, 2502 Biel');                      /* start=2 */
+});                                                                     /* start=2 */
 
 
 // Serverstart
