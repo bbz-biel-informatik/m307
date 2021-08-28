@@ -1,0 +1,15 @@
+{
+  "title": "Statische Dateien",
+  "description": "Bei fast allen Projekten brauchen wir eine Möglichkeit, statische Dateien wie Bilder, Videos, CSS und Javascript zu verwenden. Dieses Kapitel erklärt, wie man den Server konfigurieren muss, damit das funktioniert.",
+  "steps": [
+    "Wir beginnen mit dem Code des Grundgerüsts. Dieser enthält eine einzige Seite: die Startseite. Wenn man sie öffnet, wird der Text `Hello World!` angezeigt.",
+
+    "Die neue Konfiguration sagt dem Server, dass er die statischen Dateien im Ordner `public` suchen soll.",
+
+    "Erstelle den Ordner `public` in deinem Projektordner.",
+
+    "Dateien, wie zum Beispiel eine CSS-Datei, die du dort drin platzierst, kannst du über die Adresse [http://localhost:3000/site.css](http://localhost:3000/site.css) abrufen bzw. über den Pfad `/site.css` in deiner Seite einbinden.",
+
+    "Wichtig: wenn du eine Datei aus dem `public`-Ordner als CSS oder JS einbindest, darf der Pfad kein `/public` enthalten!"
+  ]
+}
