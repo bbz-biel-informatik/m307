@@ -1,7 +1,7 @@
 {
   "title": "Datenbank",
   "description": "Daten auf einem Webserver werden vorzugsweise in einer Datenbank gespeichert. So können sie relativ einfach abgerufen, geändern, erstellt und gelöscht werden.",
-  "requires": "02_templates",
+  "requirements": ["02_templates"],
   "steps": [
     "Wir beginnen mit dem Code der [Templates](02_templates). Damit sind die nötigen Einstellungen schon gemacht.",
 
