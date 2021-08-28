@@ -25,7 +25,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/todos', (req, res) => {                                           /* start=6 */
-  pool.query('SELECT * FROM users ORDER BY id ASC', (error, result) => {    /* start=6 */
+  pool.query('SELECT * FROM todos', (error, result) => {                    /* start=6 */
+    if(error) { throw error; }                                              /* start=7 */
     res.render('todos', { todos: result.rows });                            /* start=7 */
   });                                                                       /* start=6 */
 });                                                                         /* start=6 */
