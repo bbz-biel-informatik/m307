@@ -9,6 +9,6 @@
 
     "Schreibe den Code für die Fusszeile rein. Du kannst beliebigen HTML-Code verwenden.",
 
-    "Nun kannst du das Partial an allen Orten einbinden, wo du die Fusszeile anzeigen möchtest. Beachte, dass du die Dateiendung der Mustache-Datei weglassen musst."
+    "Nun kannst du das Partial an allen Orten einbinden, wo du die Fusszeile anzeigen möchtest. Beachte, dass du die Dateiendung der Mustache-Datei weglassen musst. `footer` bindet so automatisch die Datei `footer.mustache` ein."
   ]
 }
