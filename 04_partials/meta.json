@@ -1,0 +1,14 @@
+{
+  "title": "Partials",
+  "description": "Elemente einer Website werden zum Teil mehrfach verwendet. Mit Partials erhalten wir die Möglichkeit, Menus, Fusszeilen und so weiter einmal zu programmieren und mehrfach zu verwenden.",
+  "requires": "02_templates",
+  "steps": [
+    "Wir beginnen mit dem Code der [Templates](02_templates). Damit sind die nötigen Einstellungen schon gemacht.",
+
+    "Erstelle eine neue Mustache-Datei im `views`-Ordner, z.B. `footer.mustache`.",
+
+    "Schreibe den Code für die Fusszeile rein. Du kannst beliebigen HTML-Code verwenden.",
+
+    "Nun kannst du das Partial an allen Orten einbinden, wo du die Fusszeile anzeigen möchtest. Beachte, dass du die Dateiendung der Mustache-Datei weglassen musst."
+  ]
+}
