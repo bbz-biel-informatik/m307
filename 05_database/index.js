@@ -17,7 +17,7 @@ var pool = new Pool({                               /* start=5 */
   database: 'MEINEDATENBANK',                       /* start=5 */
   password: 'MEINPASSWORT',                         /* start=5 */
   port: 5432,                                       /* start=5 */
-})                                                  /* start=5 */
+});                                                 /* start=5 */
 
 // Routen
 app.get('/', (req, res) => {
