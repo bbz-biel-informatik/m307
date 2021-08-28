@@ -1,0 +1,9 @@
+{
+  "title": "Routen und URLs",
+  "description": "Diese Kapitel zeigt, wie man neue URL-Pfade hinzufügen kann.",
+  "steps": [
+    "Jeder zusätzliche Unterseite benötigt eine sogenannte Route. Routen bestehen aus einem Pfad und dem Code, der beim Aufrufen dieses Pfads ausgeführt werden soll.",
+
+    "In diesem Beispiel wird eine neue Route für eine `Kontakt`-Seite hinzugefügt. Damit kann man die Adresse [http://localhost:3000/contact](http://localhost:3000/contact) aufrufen, um die Postadresse anzuzeigen."
+  ]
+}
