@@ -6,6 +6,18 @@
 
     "Öffne zuerst die Konsole, und wechsle in deinen Projektordner.",
 
-    "Führe dann den nebenstehenden Befehl aus. Damit installierst du die Bibliothek `mustache-express`."
+    "Führe dann den nebenstehenden Befehl aus. Damit installierst du die Bibliothek `mustache-express`.",
+
+    "Um die Bibliothek zu laden, musst du sie mit `require` laden. Erst dann kannst du sie verwenden.",
+
+    "Die folgende Konfiguration sagt dem Computer, dass wir `mustache` als Templatesprache verwenden wollen, und dass sich unsere Templates im Ordner `views` befinden werden.",
+
+    "Erstelle dann im Projektordner einen Ordner namens `views`. Dort werden wir die Templates ablegen.",
+
+    "Erstelle danach die Datei `about.mustache` im Ordner `views`. Trotz der Dateiendung ist es (für den Moment) eine normale HTML-Datei",
+
+    "Natürlich kannst du auch Links, Bilder usw. einbauen.",
+
+    "Um ein Template anzuzeigen, musst du eine neue Route einfügen. Dieses Beispiel erlaubt dir, den Pfad `/uebermich` zu öffnen, auf dem dann die Datei `about.mustache` angezeigt wird."
   ]
 }
