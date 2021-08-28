@@ -1,7 +1,7 @@
 // Importieren von Code-Bibliotheken
 var express = require('express');
 var mustacheExpress = require('mustache-express');
-var Pool = require('pg').Pool                         /* start=4 */
+var Pool = require('pg').Pool:                      /* start=4 */
 
 var app = express();
 var port = 3000;
