@@ -4,6 +4,8 @@
   "steps": [
     "Wir beginnen mit dem Code des Grundgerüsts. Dieser enthält eine einzige Seite: die Startseite. Wenn man sie öffnet, wird der Text `Hello World!` angezeigt.",
 
-    ""
+    "Öffne zuerst die Konsole, und wechsle in deinen Projektordner.",
+
+    "Führe dann den nebenstehenden Befehl aus. Damit installierst du die Bibliothek `mustache-express`."
   ]
 }
