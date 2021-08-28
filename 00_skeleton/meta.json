@@ -10,7 +10,7 @@
 
     "Dieser Block bleibt für den Moment noch leer - er wird später mit Einstellungen gefüllt.",
 
-    "Hier werden alle Routen, d.h. URLs, die erreichbar sein sollen, aufgelistet. Dieses Beispiel zeigt `Hello World!` an.",
+    "Hier werden alle Routen, d.h. URLs, die erreichbar sein sollen, aufgelistet. Ein einfacher Schrägstrich bedeutet die Startseite. Dieses Beispiel zeigt `Hello World!` an.",
 
     "Der letzte Teil der Datei startet den Server mit dem gewünschten Port.",
 
