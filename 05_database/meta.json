@@ -7,8 +7,16 @@
 
     "Öffne zuerst die Konsole, und wechsle in deinen Projektordner.",
 
-    "Führe dann den nebenstehenden Befehl aus. Damit installierst du die Bibliothek `pg`, mit welcher du auf PostgreSQL-Datenbanken zugreifen kannst.",
+    "Führe dann den nebenstehenden Befehl aus. Damit installierst du die Bibliothek `pg`, mit welcher der Server auf PostgreSQL-Datenbanken zugreifen kann.",
 
-    ""
+    "Lade die Bibliothek im obersten Abschnitt der `index.js`-Datei.",
+
+    "Füge die nebenstehende Konfiguration ein, damit sich der Server mit der Datenbank verbinden kann.",
+
+    "Um eine Abfrage zu machen, kannst du den nebenstehenden Code verwenden. Du kannst beliebig lange Abfragen verwenden.",
+
+    "Damit du die Daten aus der Datenbank im Template verwenden kannst, musst du diese an das Template weitergeben. Das Resultat der Abfrage wird so als Variable `todos` an das Template gesendet.",
+
+    "Im Template kannst du die Variable `todos` nun verwenden, und zum Beispiel durch alle Todos gehen, und dann deren `name` anzeigen."
   ]
 }
