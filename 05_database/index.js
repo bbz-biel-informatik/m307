@@ -12,11 +12,11 @@ app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
 var pool = new Pool({                               /* start=5 */
-  user: 'MEINBENUTZERNAME',                         /* start=5 */
-  host: 'localhost',                                /* start=5 */
+  host: 'example.com',                              /* start=5 */
   database: 'MEINEDATENBANK',                       /* start=5 */
-  password: 'MEINPASSWORT',                         /* start=5 */
   port: 5432,                                       /* start=5 */
+  user: 'MEINBENUTZERNAME',                         /* start=5 */
+  password: 'MEINPASSWORT',                         /* start=5 */
 });                                                 /* start=5 */
 
 // Routen
