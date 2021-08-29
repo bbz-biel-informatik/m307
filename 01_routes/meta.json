@@ -2,7 +2,7 @@
   "title": "Routen und URLs",
   "description": "Diese Kapitel zeigt, wie man neue URL-Pfade hinzufügen kann.",
   "steps": [
-    "Wir beginnen mit dem Code des Grundgerüsts. Dieser enthält eine einzige Seite: die Startseite. Wenn man sie öffnet, wird der Text `Hello World!` angezeigt.",
+    "Wir beginnen mit dem Code des Grundgerüsts. Er sollte ungefähr wie das Beispiel rechts aussehen. Dieser enthält eine einzige Seite: die Startseite. Wenn man sie öffnet, wird der Text `Hello World!` angezeigt.",
 
     "Jeder zusätzliche Unterseite benötigt eine sogenannte Route. Routen bestehen aus einem Pfad und dem Code, der beim Aufrufen dieses Pfads ausgeführt werden soll.",
 

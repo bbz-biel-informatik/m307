@@ -2,7 +2,7 @@
   "title": "Templates",
   "description": "Statt einfachem Text können wir auch HTML-Seiten anzeigen. Dieses Kapitel zeigt, wie man dies einrichtet und verwendet.",
   "steps": [
-    "Wir beginnen mit dem Code des Grundgerüsts. Dieser enthält eine einzige Seite: die Startseite. Wenn man sie öffnet, wird der Text `Hello World!` angezeigt.",
+    "Wir beginnen mit dem Code des Grundgerüsts. Er sollte ungefähr wie das Beispiel rechts aussehen. Dieser enthält eine einzige Seite: die Startseite. Wenn man sie öffnet, wird der Text `Hello World!` angezeigt.",
 
     "Öffne zuerst die Konsole, und wechsle in deinen Projektordner.",
 

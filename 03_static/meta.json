@@ -2,7 +2,7 @@
   "title": "Statische Dateien",
   "description": "Bei fast allen Projekten brauchen wir eine Möglichkeit, statische Dateien wie Bilder, Videos, CSS und Javascript zu verwenden. Dieses Kapitel erklärt, wie man den Server konfigurieren muss, damit das funktioniert.",
   "steps": [
-    "Wir beginnen mit dem Code des Grundgerüsts. Dieser enthält eine einzige Seite: die Startseite. Wenn man sie öffnet, wird der Text `Hello World!` angezeigt.",
+    "Wir beginnen mit dem Code des Grundgerüsts. Er sollte ungefähr wie das Beispiel rechts aussehen. Dieser enthält eine einzige Seite: die Startseite. Wenn man sie öffnet, wird der Text `Hello World!` angezeigt.",
 
     "Die neue Konfiguration sagt dem Server, dass er die statischen Dateien im Ordner `public` suchen soll.",
 
