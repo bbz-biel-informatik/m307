@@ -1,0 +1,4 @@
+{                                       /* start=3 */
+  "restartable": "rs",                  /* start=3 */
+  "ext": "js,json,css,mustache"         /* start=3 */
+}                                       /* start=3 */

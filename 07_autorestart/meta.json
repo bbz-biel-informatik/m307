@@ -1,0 +1,13 @@
+{
+  "title": "Autorestart",
+  "description": "Bei jeder Änderung der Dateien muss der Server neu gestartet werden. Dieses Kapitel zeigt, wie man den Server konfigurieren kann, damit er automatisch neu startet.",
+  "steps": [
+    "Öffne die Konsole und wechsle in deinen Projektordner.",
+
+    "Installiere `nodemon` mit dem nebenstehenden Befehl. Nodemon ist das Programm, das deinen Server automatisch neu startet.",
+
+    "Erstelle in deinem Projektordner die Datei `nodemon.json` und füge den nebenstehenden Inhalt ein.",
+
+    "Starte von nun an deinen Server mit `nodemon index.js`. So startet er automatisch bei Dateiänderungen neu."
+  ]
+}
