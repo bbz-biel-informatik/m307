@@ -6,7 +6,7 @@
 
     "Installiere `nodemon` mit dem nebenstehenden Befehl. Nodemon ist das Programm, das deinen Server automatisch neu startet.",
 
-    "Erstelle in deinem Projektordner die Datei `nodemon.json` und füge den nebenstehenden Inhalt ein.",
+    "Erstelle in deinem Projektordner die Datei `nodemon.json` und füge den nebenstehenden Inhalt ein. Damit startet der Server neu, sobald du eine Javascript, JSON, CSS oder Mustache-Datei veränderst.",
 
     "Starte von nun an deinen Server mit `nodemon index.js`. So startet er automatisch bei Dateiänderungen neu."
   ]
