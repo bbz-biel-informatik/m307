@@ -1,5 +1,22 @@
 {
   "title": "Formulare",
   "description": "Um eine Website interaktiv zu gestalten, müssen neue Daten erfasst werden können. Dies geschieht mit Hilfe von Formularen, die mit einer Datenbank verknüpft sind. ",
-  "steps": []
+  "requirements": ["02_templates", "05_database"],
+  "steps": [
+
+    "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",
+
+    "Füge die nebenstehende Konfiguration ein. Sie vereinfacht das Auswerten von Formulardaten.",
+
+    "Zuerst brauchen wir eine Route, mit der wir das Formular öffnen können. Füge sie irgendwo unterhalb der Route für die Startseite (`/`) ein.",
+
+    "Weiter benötigen wir ein Template für das Formular. Stelle sicher, dass du das Template so benennst, wie in der Route oben bei `res.render()` angegeben.",
+
+    "Erstelle dann eine neue Route, mit der die Formulardaten verarbeitet werden. Stelle sicher, dass die URL mit der URL im `action`-Attribut des Formulars übereinstimmt.",
+
+    "Nun können wir die Formulardaten in die Datenbank schreiben. Führe alle Attribute in den Klammern auf.",
+
+    "Zum Schluss leiten wir die Besucher nach einem erfolgreichen Eintrag wieder auf die Startseite weiter."
+
+  ]
 }
