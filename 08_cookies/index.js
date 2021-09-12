@@ -15,7 +15,7 @@ app.use(cookieParser());                                        /* start=5 */
 
 // Routen
 app.get('/', (req, res) => {
-  res.render('index');                                          /* end=8 */
+  res.render('index');                                          /* start=1, end=8 */
   res.render('index', { farbe: req.cookies['color'] });         /* start=8 */
 });
 
