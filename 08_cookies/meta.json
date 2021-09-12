@@ -16,7 +16,7 @@
 
     "Baue auf deiner Startseite ein Formular zum Ändern der Hintergrundfarbe ein.",
 
-    "Erstelle eine neue Route, an die das Formular gesendet wird. Dort wird die im Formular eingegebene Farbe in einem Cookie gespeichert.",
+    "Erstelle eine neue Route, an die das Formular gesendet wird. Dort wird die im Formular eingegebene Farbe in einem Cookie gespeichert. Das Cookie hat den Namen `color` und den Wert des Formularfelds.",
 
     "Ändere die Route der Startseite so, dass das Cookie mit der Farbe gelesen und an das Template weitergegeben wird.",
 
