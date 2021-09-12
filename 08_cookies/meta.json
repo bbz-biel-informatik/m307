@@ -1,0 +1,26 @@
+{
+  "title": "Cookies",
+  "description": "Oft müssen temporäre Daten auf dem Gerät der Besucher gespeichert werden. Dafür werden meist Cookies verwendet.",
+  "requirements": ["02_templates"],
+  "steps": [
+
+    "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",
+
+    "Wechsle zuerst in der Konsole in deinen Projektordner.",
+
+    "Installiere dann die Bibliothek `cookie-parser`. Damit wird es einfacher, gesetzte Cookies zu lesen.",
+
+    "Lade dann die Bibliothek mit `require()` im Anfangsteil deiner `index.js`-Datei.",
+
+    "Konfiguriere den Server, dass er die Bibliothek verwendet.",
+
+    "Baue auf deiner Startseite ein Formular zum Ändern der Hintergrundfarbe ein.",
+
+    "Erstelle eine neue Route, an die das Formular gesendet wird. Dort wird die im Formular eingegebene Farbe in einem Cookie gespeichert.",
+
+    "Ändere die Route der Startseite so, dass das Cookie mit der Farbe gelesen und an das Template weitergegeben wird.",
+
+    "Du kannst nun die Farbe im Template der Startseite verwenden."
+
+  ]
+}
