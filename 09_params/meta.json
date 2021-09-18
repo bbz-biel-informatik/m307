@@ -10,7 +10,7 @@
 
     "Wir möchten, dass die neue Seite über die URL `/todos/:id` erreichbar ist. Wir können so eine beliebige ID einsetzen, und das Todo wird angezeigt.",
 
-    "Der dynamische Teil der URL ist in der Variable `req.params` verfügbar. Damit können wir eine SQL-Abfrage bauen, die ein einziges Todo lädt.",
+    "Der dynamische Teil der URL ist in der Variable `req.params` verfügbar. Damit können wir eine SQL-Abfrage bauen, die ein einziges Todo lädt. Am Schluss wird das neue Template (`todo.mustache`) angezeigt.",
 
     "Zuletzt können wir unsere Todo-Liste noch so anpassen, dass man darüber auf die neue Seite kommt."
 
