@@ -6,7 +6,7 @@
 
     "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",
 
-    "Zuerst brauchen wir ein Template, das ein einziges Todo anzeigt. Im Moment reicht es uns, den Namen und die Deadline des Todos anzuzeigen.",
+    "Zuerst erstellen wir ein neues Template, das ein einziges Todo anzeigt. Im Moment reicht es uns, den Namen und die Deadline des Todos anzuzeigen.",
 
     "Wir möchten, dass die neue Seite über die URL `/todo/:id` erreichbar ist. Wir können so eine beliebige ID einsetzen, und das Todo wird angezeigt.",
 
