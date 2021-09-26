@@ -8,9 +8,9 @@
 
     "Zuerst erstellen wir ein neues Template `edit_todo.mustache`, mit dem das Bearbeitungsformular angezeigt wird. Im Moment reicht es uns, den Namen des Todos ändern zu können.",
 
-    "Anders als beim Erstellen wollen wir aber den aktuellen Wert im Formular schon anzeigen."
+    "Anders als beim Erstellen wollen wir aber den aktuellen Wert im Formular schon anzeigen.",
 
-    "Wir möchten, dass die neue Seite über die URL `/todos/:id/edit` erreichbar ist. Wir können so eine beliebige ID einsetzen, und das Formular wird angezeigt. WICHTIG: hier müssen wir das `edit_todo.mustache`-Template angezeigt.",
+    "Wir möchten, dass die neue Seite über die URL `/todos/:id/edit` erreichbar ist. Wir können so eine beliebige ID einsetzen, und das Formular wird angezeigt. WICHTIG: hier müssen wir das `edit_todo.mustache`-Template anzeigen.",
 
     "Zuletzt brauchen wir noch eine Route, an die das Formular geschickt werden kann, und die die Datenbank aktualisiert.",
 
