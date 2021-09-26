@@ -1,0 +1,16 @@
+{
+  "title": "Löschen von Einträgen",
+  "description": "Dieses Kapitel zeigt, wie Einträge gelöscht werden können.",
+  "requirements": ["02_templates", "05_database"],
+  "steps": [
+
+    "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",
+
+    "Wir möchten, dass Einträge über die URL `/todos/:id/delete` gelöscht werden können. Wir können so eine beliebige ID einsetzen, und das Todo wird gelöscht.",
+
+    "Hier müssen wir nun den `DELETE`-Befehl von SQL ausführen, damit der Eintrag gelöscht wird. Wir löschen damit das Todo mit der ID, die in der URL steht.",
+
+    "Zuletzt brauchen wir noch einen Lösch-Knopf. Am besten geht das, indem wir ihn auf der todo-Seite einbinden. Der Knopf sendet ein leeres Formular an die neu erstellte Route, und löscht so den Eintrag."
+
+  ]
+}

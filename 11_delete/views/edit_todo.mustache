@@ -1,0 +1,5 @@
+<form action="/update/{{todo.id}}" method="post">                           {{! start=2 }}
+    Name: <input type="text" name="name">                                   {{! start=2, end=3 }}
+    Name: <input type="text" name="name" value="{{todo.name}}">             {{! start=3 }}
+    <input type="submit" value="OK">                                        {{! start=2 }}
+</form>                                                                     {{! start=2 }}
