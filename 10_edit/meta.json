@@ -1,0 +1,20 @@
+{
+  "title": "Bearbeiten von Einträgen",
+  "description": "Bestehende Datenbank-Einträge können auch bearbeitet werden. Dazu wird sehr ähnlicher Code verwendet wie zur Erstellung.",
+  "requirements": ["02_templates", "05_database"],
+  "steps": [
+
+    "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",
+
+    "Zuerst erstellen wir ein neues Template `edit_todo.mustache`, mit dem das Bearbeitungsformular angezeigt wird. Im Moment reicht es uns, den Namen des Todos ändern zu können.",
+
+    "Anders als beim Erstellen wollen wir aber den aktuellen Wert im Formular schon anzeigen."
+
+    "Wir möchten, dass die neue Seite über die URL `/todos/:id/edit` erreichbar ist. Wir können so eine beliebige ID einsetzen, und das Formular wird angezeigt. WICHTIG: hier müssen wir das `edit_todo.mustache`-Template angezeigt.",
+
+    "Zuletzt brauchen wir noch eine Route, an die das Formular geschickt werden kann, und die die Datenbank aktualisiert.",
+
+    "Damit der Datenbankeintrag geändert wird, müssen wir den SQL-Befehl `UPDATE` ausführen. So können wir die Formulardaten in die Datenbank speichern und den alten Eintrag überschreiben."
+
+  ]
+}
