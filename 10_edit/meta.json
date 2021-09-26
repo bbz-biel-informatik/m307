@@ -12,9 +12,10 @@
 
     "Wir möchten, dass die neue Seite über die URL `/todos/:id/edit` erreichbar ist. Wir können so eine beliebige ID einsetzen, und das Formular wird angezeigt. WICHTIG: hier müssen wir das `edit_todo.mustache`-Template anzeigen.",
 
-    "Zuletzt brauchen wir noch eine Route, an die das Formular geschickt werden kann, und die die Datenbank aktualisiert.",
+    "Nun brauchen wir noch eine Route, an die das Formular geschickt werden kann, und die die Datenbank aktualisiert.",
 
-    "Damit der Datenbankeintrag geändert wird, müssen wir den SQL-Befehl `UPDATE` ausführen. So können wir die Formulardaten in die Datenbank speichern und den alten Eintrag überschreiben."
+    "Damit der Datenbankeintrag geändert wird, müssen wir den SQL-Befehl `UPDATE` ausführen. So können wir die Formulardaten in die Datenbank speichern und den alten Eintrag überschreiben.",
 
+    "Zuletzt brauchen wir noch einen Bearbeiten-Knopf. Am besten geht das, indem wir ihn auf der todo-Seite einbinden. Der Knopf leitet die Besucher auf die Bearbeiten-Seite."
   ]
 }
