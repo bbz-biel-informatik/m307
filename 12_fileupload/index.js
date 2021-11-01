@@ -29,8 +29,9 @@ app.get('/fileupload', function(req, res) {           /* start=5 */
   res.render('fileupload');                           /* start=5 */
 });                                                   /* start=5 */
 
-app.post('/upload', upload.single('image'), function (req, res, next) {         /* start=6 */
-  pool.query(`INSERT INTO todos (beschreibung, dateiname) VALUES ('${req.body.beschreibung}', '${req.file.filename}')`, (error, result) => {  /* start=7 */
+app.post('/upload', upload.single('image'), function (req, res) {         /* start=6 */
+  const q = `INSERT INTO todos (text, dateiname) VALUES ('${req.body.text}', '${req.file.filename}')`; /* start=7 */
+  pool.query(q, (error, result) => {  /* start=7 */
     if(error) { throw error; }                                                  /* start=7 */
     res.redirect('/todos');                                                     /* start=7 */
   });                                                                           /* start=7 */
