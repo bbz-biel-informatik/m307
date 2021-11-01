@@ -1,0 +1,24 @@
+{
+  "title": "User-Login",
+  "description": "Dieses Kapitel zeigt, wie du ein Login-Formular programmieren kannst.",
+  "requirements": ["06_forms", "05_database", "08_cookies", "13_registrierung"],
+  "steps": [
+
+    "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",
+
+    "Sobald sich ein User einloggen will, vergleichen wir dessen Passwort mit dem Passwort in der Datenbank. Falls die beiden übereinstimmen, setzten wir auf dem PC des Besuchers ein Cookie, das den Benutzer identifiziert und uns bei den folgenden Besuchen versichert, dass der User angemeldet ist.",
+
+    "Um dieses Cookie zu speichern, brauchen wir eine Bibliothek namens `express-session`. Damit können wir verschlüsselte Cookies setzen. Installiere sie wie in der Anleitung beschrieben.",
+
+    "Danach kannst du sie in deinem Skript einbinden. Dazu braucht es noch einige Zeilen Konfiguration, die bestimmt, wie lange das Login gültig sein soll, und wie das Cookie verschlüsselt werden soll.",
+
+    "Als erstes brauchen wir nun ein Login-Formular. Erstelle eine neue Route und das dazugehörige Formular in einem Mustache-Template.",
+
+    "Das Formular wird an die Adresse `/login` gesendet. Dort durchsuchen wir zuerst die Datenbank, um den Benutzernamen zu finden, der im Formular eingegeben wurde.",
+
+    "Danach überprüfen wir, ob das Passwort aus dem Formular mit dem Passwort in der Datenbank übereinstimmt. Falls dieses korrekt ist, speichern wir das als Cookie ab und leiten den Besucher auf die interne Seite. Falls nicht, leiten wir den Besucher auf die Loginseite zurück.",
+
+    "Für jede interne Seite können wir nun zu Beginn diese Zeile einfügen. Sie überprüft, ob die Person eingeloggt ist oder nicht, und leitet sie allenfalls auf das Login-Formular weiter."
+
+  ]
+}
