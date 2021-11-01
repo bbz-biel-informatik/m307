@@ -1,0 +1,22 @@
+{
+  "title": "User-Registrierung",
+  "description": "Dieses Kapitel zeigt, wie du ein Registrierungs-Formular programmieren kannst, das neue User in der Datenbank speichern kann.",
+  "requirements": ["06_forms", "05_database", "08_cookies"],
+  "steps": [
+
+    "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",
+
+    "Passwörter dürfen nie direkt in der Datenbank gespeichert werden. Stattdessen wird ein sogenannter Hash in der Datenbank abgelegt. Damit kann beim Login das Passwort überprüft werden. Das Passwort kann aber bei einem Hackerangriff nicht gelesen werden.",
+
+    "Um einen Hash zu generieren, brauchen wir die Bibliothek `bcrypt`. Installiere sie in der Konsole wie im Beispiel beschrieben.",
+
+    "Danach kannst du sie in deinem Skript einbinden.",
+
+    "Als erstes brauchen wir nun ein Registrierungs-Formular. Erstelle eine neue Route und das dazugehörige Formular in einem Mustache-Template",
+
+    "Das Formular wird an die Adresse `/register` gesendet. Dort müssen wir das Passwort hashen.",
+
+    "Danach können wir den neuen Benutzer in der Datenbank ablegen und ihn auf die Login-Seite weiterleiten."
+
+  ]
+}
