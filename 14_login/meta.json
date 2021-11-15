@@ -16,7 +16,7 @@
 
     "Das Formular wird an die Adresse `/login` gesendet. Dort durchsuchen wir zuerst die Datenbank, um den Benutzernamen zu finden, der im Formular eingegeben wurde.",
 
-    "Danach überprüfen wir, ob das Passwort aus dem Formular mit dem Passwort in der Datenbank übereinstimmt. Falls dieses korrekt ist, speichern wir das als Cookie ab und leiten den Besucher auf die interne Seite. Falls nicht, leiten wir den Besucher auf die Loginseite zurück.",
+    "Danach überprüfen wir, ob das Passwort aus dem Formular mit dem Passwort in der Datenbank übereinstimmt. Falls dieses korrekt ist, speichern wir die Benutzer-ID als Cookie ab und leiten den Besucher auf die interne Seite. Falls nicht, leiten wir den Besucher auf die Loginseite zurück.",
 
     "Für jede interne Seite können wir nun zu Beginn diese Zeile einfügen. Sie überprüft, ob die Person eingeloggt ist oder nicht, und leitet sie allenfalls auf das Login-Formular weiter."
 

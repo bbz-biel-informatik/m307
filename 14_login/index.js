@@ -24,7 +24,7 @@ app.use(sessions({                                      /* start=4 */
 
 // Routen
 app.get('/todos', (req, res) => {
-  if(!req.session.benutzername) { res.redirect('/login_form'); return; } /* start=8 */
+  if(!req.session.benutzerid) { res.redirect('/login_form'); return; } /* start=8 */
   res.send('Hello World!');
 });
 
@@ -36,7 +36,7 @@ app.post('/login', function (req, res) {                                        
   pool.query(`SELECT * FROM users WHERE benutzername = '${req.body.benutzername}'`, (error, result) => {  /* start=6 */
     if(error) { throw error; }                                                                            /* start=6 */
     if(bcrypt.compareSync(req.body.passwort, result.rows[0].passwort)) {                                  /* start=7 */
-      req.session.benutzername = result.rows[0].benutzername;                                             /* start=7 */
+      req.session.benutzerid = result.rows[0].id;                                             /* start=7 */
       res.redirect('/todos');                                                                             /* start=7 */
     } else {                                                                                              /* start=7 */
       res.redirect('/login_form');                                                                        /* start=7 */
