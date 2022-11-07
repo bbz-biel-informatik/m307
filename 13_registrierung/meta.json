@@ -8,7 +8,7 @@
 
     "Passwörter dürfen nie direkt in der Datenbank gespeichert werden. Stattdessen wird ein sogenannter Hash in der Datenbank abgelegt. Damit kann beim Login das Passwort überprüft werden. Das Passwort kann aber bei einem Hackerangriff nicht gelesen werden.",
 
-    "Um einen Hash zu generieren, brauchen wir die Bibliothek `bcrypt`. Installiere sie in der Konsole wie im Beispiel beschrieben.",
+    "Um einen Hash zu generieren, brauchen wir die Bibliothek `bcrypt`.",
 
     "Danach kannst du sie in deinem Skript einbinden.",
 

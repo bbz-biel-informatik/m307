@@ -33,7 +33,8 @@ app.get('/login_form', function(req, res) {           /* start=5 */
 });                                                   /* start=5 */
 
 app.post('/login', function (req, res) {                                                                  /* start=6 */
-  pool.query(`SELECT * FROM users WHERE benutzername = '${req.body.benutzername}'`, (error, result) => {  /* start=6 */
+  pool.query('SELECT * FROM users WHERE benutzername = ? ',  /* start=6 */
+  [req.body.benutzername], (error, result) => {  /* start=6 */
     if(error) { throw error; }                                                                            /* start=6 */
     if(bcrypt.compareSync(req.body.passwort, result.rows[0].passwort)) {                                  /* start=7 */
       req.session.benutzerid = result.rows[0].id;                                             /* start=7 */
