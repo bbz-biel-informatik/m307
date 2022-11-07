@@ -8,8 +8,6 @@
 
     "Dateien werden normalerweise nicht in der Datenbank gespeichert, sondern im Ordner `public/uploads`. In der Datenbank wird dann nur der Dateiname gespeichert.",
 
-    "Zuerst brauchen wir die Bibliothek `multer`, die den Upload vereinfacht. Diese kann mit dem nebenstehenden Befehl installiert werden.",
-
     "Multer muss dann konfiguriert werden. Hier können wir wählen, wo die Uploads gespeichert werden sollen. Normalerweise wird gerade der Pfad wie im Beispiel verwendet.",
 
     "Als nächstes brauchen wir ein Formular und eine zugehörige Route. Beachte, dass das Upload-Feld den `type` = `file` hat, und dass du wie im Beispiel den `enctype` angeben musst. Nur so kannst du Dateien hochladen.",

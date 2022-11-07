@@ -2,8 +2,8 @@
 var express = require('express');
 var mustacheExpress = require('mustache-express');
 var Pool = require('pg').Pool;
-const multer  = require('multer');                    /* start=4 */
-const upload = multer({ dest: 'public/uploads/' });   /* start=4 */
+const multer  = require('multer');                    /* start=3 */
+const upload = multer({ dest: 'public/uploads/' });   /* start=3 */
 
 var app = express();
 var port = 3000;
@@ -25,17 +25,18 @@ app.get('/todos', (req, res) => {
   });
 });
 
-app.get('/fileupload', function(req, res) {           /* start=5 */
-  res.render('fileupload');                           /* start=5 */
-});                                                   /* start=5 */
+app.get('/fileupload', function(req, res) {           /* start=4 */
+  res.render('fileupload');                           /* start=4 */
+});                                                   /* start=4 */
 
-app.post('/upload', upload.single('image'), function (req, res) {         /* start=6 */
-  const q = `INSERT INTO todos (text, dateiname) VALUES ('${req.body.text}', '${req.file.filename}')`; /* start=7 */
-  pool.query(q, (error, result) => {  /* start=7 */
-    if(error) { throw error; }                                                  /* start=7 */
-    res.redirect('/todos');                                                     /* start=7 */
-  });                                                                           /* start=7 */
-});                                                                             /* start=6 */
+app.post('/upload', upload.single('image'), function (req, res) {         /* start=5 */
+  pool.query('INSERT INTO todos (text, dateiname) VALUES (?, ?)',         /* start=6 */
+    [req.body.text, req.file.filename],                                   /* start=6 */
+    (error, result) => {                                                  /* start=6 */
+      if(error) { throw error; }                                                  /* start=6 */
+      res.redirect('/todos');                                                     /* start=6 */
+  });                                                                           /* start=6 */
+});                                                                             /* start=5 */
 
 // Serverstart
 app.listen(port, () => {
