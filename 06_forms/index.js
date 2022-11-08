@@ -23,7 +23,7 @@ app.get('/new', (req, res) => {                                 /* start=3 */
 });                                                             /* start=3 */
 
 app.post('/create', (req, res) => {                                                           /* start=5 */
-  pool.query('INSERT INTO todos (name) VALUES (?)',                                           /* start=6 */
+  pool.query('INSERT INTO todos (name) VALUES ($1)',                                          /* start=6 */
     [req.body.name],                                                                          /* start=6 */
     (error, result) => {                                                                      /* start=6 */
     if(error) { throw error; }                                                                /* start=6 */

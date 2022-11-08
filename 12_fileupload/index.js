@@ -30,7 +30,7 @@ app.get('/fileupload', function(req, res) {           /* start=4 */
 });                                                   /* start=4 */
 
 app.post('/upload', upload.single('image'), function (req, res) {         /* start=5 */
-  pool.query('INSERT INTO todos (text, dateiname) VALUES (?, ?)',         /* start=6 */
+  pool.query('INSERT INTO todos (text, dateiname) VALUES ($1, $2)',         /* start=6 */
     [req.body.text, req.file.filename],                                   /* start=6 */
     (error, result) => {                                                  /* start=6 */
       if(error) { throw error; }                                                  /* start=6 */
