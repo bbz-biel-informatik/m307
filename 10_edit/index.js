@@ -24,7 +24,7 @@ app.get('/todos', (req, res) => {
 });
 
 app.get('/todos/:id/edit', (req, res) => {                                                  /* start=4 */
-  pool.query(`SELECT * FROM todos WHERE id = ${req.params.id}`, (error, result) => {        /* start=4 */
+  pool.query('SELECT * FROM todos WHERE id = $1', [req.params.id], (error, result) => {        /* start=4 */
     if(error) {                                                                             /* start=4 */
       throw error;                                                                          /* start=4 */
     }                                                                                       /* start=4 */
@@ -33,9 +33,11 @@ app.get('/todos/:id/edit', (req, res) => {                                      
 });                                                                                         /* start=4 */
 
 app.post('/update/:id', (req, res) => {                                                                         /* start=5 */
-  pool.query(`UPDATE todos SET name = '${req.body.name}' WHERE id = ${req.params.id}`, (error, result) => {     /* start=6 */
-    if(error) { throw error; }                                                                                  /* start=6 */
-    res.redirect('/todos');                                                                                     /* start=6 */
+  pool.query('UPDATE todos SET name = $1 WHERE id = $2',                                      /* start=6 */
+    [req.body.name, req.params.id],                                                         /* start=6 */
+    (error, result) => {                                                                    /* start=6 */
+      if(error) { throw error; }                                                                                  /* start=6 */
+      res.redirect('/todos');                                                                                     /* start=6 */
   });                                                                                                           /* start=6 */
 });                                                                                                             /* start=5 */
 

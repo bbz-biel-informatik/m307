@@ -24,7 +24,7 @@ app.get('/todos', (req, res) => {
 });
 
 app.post('/todos/:id/delete', (req, res) => {                                                 /* start=2 */
-  pool.query(`DELETE FROM todos WHERE id = ${req.params.id}`, (error, result) => {            /* start=3 */
+  pool.query('DELETE FROM todos WHERE id = $1', [req.params.id], (error, result) => {            /* start=3 */
     if(error) {                                                                               /* start=3 */
       throw error;                                                                            /* start=3 */
     }                                                                                         /* start=3 */
