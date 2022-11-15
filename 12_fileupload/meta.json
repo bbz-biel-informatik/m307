@@ -1,7 +1,7 @@
 {
   "title": "Dateiupload",
   "description": "Dieses Kapitel zeigt, wie Dateien wie Bilder, PDFs oder Textdokumente hochgeladen und gespeichert werden können.",
-  "requirements": ["03_static", "05_database"],
+  "requirements": [],
   "steps": [
 
     "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",

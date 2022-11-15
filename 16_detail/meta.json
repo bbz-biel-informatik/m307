@@ -2,7 +2,7 @@
 {
   "title": "Detailansicht",
   "description": "Auf den meisten Websites werden Daten in einer Form von Liste angezeigt, die man dann anklicken kann, um die Details zu sehen. Dieses Kapitel erklärt, wie Daten einer Datenbank in einer Detailansicht angezeigt werden können.",
-  "requirements": ["02_templates"],
+  "requirements": [],
   "steps": [
     "Wir beginnen mit dem Code aus der Anleitung [Templates](02_templates). Er sollte ungefähr wie das Beispiel rechts aussehen. Damit sind die nötigen Einstellungen schon gemacht.",
 

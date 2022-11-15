@@ -1,7 +1,7 @@
 {
   "title": "Formulare",
   "description": "Um eine Website interaktiv zu gestalten, müssen neue Daten erfasst werden können. Dies geschieht mit Hilfe von Formularen, die mit einer Datenbank verknüpft sind. ",
-  "requirements": ["02_templates", "05_database"],
+  "requirements": [],
   "steps": [
 
     "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",

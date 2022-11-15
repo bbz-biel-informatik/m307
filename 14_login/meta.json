@@ -1,7 +1,7 @@
 {
   "title": "User-Login",
   "description": "Dieses Kapitel zeigt, wie du ein Login-Formular programmieren kannst.",
-  "requirements": ["06_forms", "05_database", "08_cookies", "13_registrierung"],
+  "requirements": [],
   "steps": [
 
     "Dein Code sollte zu Beginn ungefähr wie das Beispiel rechts aussehen. Eventuell hast du mehr oder anderen Code. Das spielt keine Rolle, solange du bei den folgenden Schritten den Code am entsprechenden Ort einfügst.",
