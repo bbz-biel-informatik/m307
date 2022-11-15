@@ -1,0 +1,15 @@
+
+{
+  "title": "Listen",
+  "description": "Daten auf einem Webserver werden vorzugsweise in einer Datenbank gespeichert. So können sie relativ einfach abgerufen, geändern, erstellt und gelöscht werden.",
+  "requirements": ["02_templates"],
+  "steps": [
+    "Wir beginnen mit dem Code aus der Anleitung [Templates](02_templates). Er sollte ungefähr wie das Beispiel rechts aussehen. Damit sind die nötigen Einstellungen schon gemacht.",
+
+    "Um eine Abfrage zu machen, kannst du den nebenstehenden Code verwenden. Du kannst beliebig lange Abfragen verwenden.",
+
+    "Damit du die Daten aus der Datenbank im Template verwenden kannst, musst du diese an das Template weitergeben. Das Resultat der Abfrage wird so als Variable `todos` an das Template gesendet.",
+
+    "Im Template kannst du die Variable `todos` nun verwenden, und zum Beispiel durch alle Todos gehen, und dann deren `name` anzeigen."
+  ]
+}
