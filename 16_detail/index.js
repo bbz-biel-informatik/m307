@@ -29,9 +29,9 @@ app.get('/todos/:id', (req, res) => {                                       /* s
     [req.params.id],                                                        /* start=3 */
     (error, result) => {                                                    /* start=3 */
       if(error) { throw error; }                                            /* start=3 */
-      res.render('todo', { todos: result.rows[0] });                        /* start=4 */
+      res.render('todo', { todo: result.rows[0] });                         /* start=4 */
   });                                                                       /* start=3 */
-});                                                                         /* start=3 */
+});                                                                         /* start=2 */
 
 // Serverstart
 app.listen(port, () => {
