@@ -1,0 +1,17 @@
+
+{
+  "title": "Detailansicht",
+  "description": "Auf den meisten Websites werden Daten in einer Form von Liste angezeigt, die man dann anklicken kann, um die Details zu sehen. Dieses Kapitel erklärt, wie Daten einer Datenbank in einer Detailansicht angezeigt werden können.",
+  "requirements": ["02_templates"],
+  "steps": [
+    "Wir beginnen mit dem Code aus der Anleitung [Templates](02_templates). Er sollte ungefähr wie das Beispiel rechts aussehen. Damit sind die nötigen Einstellungen schon gemacht.",
+
+    "Zuerst brauchen wir eine neue Seite, bei der wir (wie z.B. bei Moodle) die ID des Datenbankeintrags, den wir anzeigen wollen, in der URL angeben können.",
+
+    "Um eine Abfrage zu machen, kannst du den nebenstehenden Code verwenden. Wir verwenden die ID aus der URL für die Auswahl des Datenbankeintrags.",
+
+    "Damit du die Daten aus der Datenbank im Template verwenden kannst, musst du diese an das Template weitergeben. Das Resultat der Abfrage wird so als Variable `todo` an das Template gesendet.",
+
+    "Im Template kannst du die Variable `todo` nun verwenden, und zum Beispiel den Namen und die Beschreibung anzeigen."
+  ]
+}
