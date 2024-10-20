@@ -1,4 +1,4 @@
-import { createApp } from "./config.js";      /* end=3 */
+import { createApp } from "./config.js";      /* start=1, end=3 */
 import { createApp, upload } from "./config.js";      /* start=3 */
 
 const app = createApp({
