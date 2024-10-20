@@ -1,44 +1,29 @@
-// Importieren von Code-Bibliotheken
-var express = require('express');
-var mustacheExpress = require('mustache-express');
-var Pool = require('pg').Pool;
-const multer  = require('multer');                    /* start=3 */
-const upload = multer({ dest: 'public/uploads/' });   /* start=3 */
+import { createApp, upload } from "./config.js";
 
-var app = express();
-var port = 3000;
-
-// Konfiguration und Einstellungen
-app.engine('mustache', mustacheExpress());
-app.set('view engine', 'mustache');
-app.set('views', __dirname + '/views');
-
-// Routen
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+const app = createApp({
+  user: "autumn_star_7622",
+  host: "168.119.168.41",
+  database: "demo",
+  password: "uaioysdfjoysfdf",
+  port: 18324,
 });
 
-app.get('/todos', (req, res) => {
-  pool.query('SELECT * FROM todos', (error, result) => {
-    if(error) { throw error; }
-    res.render('todos', { todos: result.rows });
-  });
+/* Startseite */
+app.get("/", async function (req, res) {
+  res.render("start", {});
 });
 
-app.get('/fileupload', function(req, res) {           /* start=4 */
-  res.render('fileupload');                           /* start=4 */
-});                                                   /* start=4 */
+app.get("/new_post", async function (req, res) {    /* start=3 */
+  res.render("new_post", {});                       /* start=3 */
+});                                                 /* start=3 */
 
-app.post('/upload', upload.single('image'), function (req, res) {         /* start=5 */
-  pool.query('INSERT INTO todos (text, dateiname) VALUES ($1, $2)',         /* start=6 */
-    [req.body.text, req.file.filename],                                   /* start=6 */
-    (error, result) => {                                                  /* start=6 */
-      if(error) { throw error; }                                                  /* start=6 */
-      res.redirect('/todos');                                                     /* start=6 */
-  });                                                                           /* start=6 */
-});                                                                             /* start=5 */
+app.post("/create_post", upload.single('image'), async function (req, res) {                                                              /* start=4 */
+  const result = await app.locals.pool.query("INSERT INTO todos (text, dateiname) VALUES ($1, $2)", [req.body.text, req.file.filename]);  /* start=5 */
+  console.log(result);                                                                                                                    /* start=5 */
+  res.redirect("/");                                                                                                                      /* start=5 */
+});                                                                                                                                       /* start=4 */
 
-// Serverstart
-app.listen(port, () => {
-  console.log('App listening on port ' + port);
+/* Wichtig! Diese Zeilen müssen immer am Schluss der Website stehen! */
+app.listen(3010, () => {
+  console.log(`Example app listening at http://localhost:3010`);
 });

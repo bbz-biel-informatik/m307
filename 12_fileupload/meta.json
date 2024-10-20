@@ -8,11 +8,9 @@
 
     "Dateien werden normalerweise nicht in der Datenbank gespeichert, sondern im Ordner `public/uploads`. In der Datenbank wird dann nur der Dateiname gespeichert.",
 
-    "Multer muss dann konfiguriert werden. Hier können wir wählen, wo die Uploads gespeichert werden sollen. Normalerweise wird gerade der Pfad wie im Beispiel verwendet.",
+    "Als erstes brauchen wir ein Formular und eine zugehörige Route, damit wir das Formular anzeigen können. Beachte, dass das Upload-Feld den `type` = `file` hat, und dass du wie im Beispiel den `enctype` angeben musst. Nur so kannst du Dateien hochladen.",
 
-    "Als nächstes brauchen wir ein Formular und eine zugehörige Route. Beachte, dass das Upload-Feld den `type` = `file` hat, und dass du wie im Beispiel den `enctype` angeben musst. Nur so kannst du Dateien hochladen.",
-
-    "Weiter brauchen wir eine Route, an die das Formular gesendet wird. Beachte hier, dass der Teil `upload.single()` sehr wichtig ist. Dort muss der Name des File-Formularfeldes drinstehen!",
+    "Weiter brauchen wir eine Route, an die das Formular gesendet wird, und wo der Post in die Datenbank eingetragen wird. Beachte hier, dass der Teil `upload.single()` sehr wichtig ist. Dort muss der Name des File-Formularfeldes drinstehen! Ausserdem muss die URL im Formular mit der URL in index.js übereinstimmen.",
 
     "Die Datei wird automatisch im konfigurierten Ordner gespeichert. Über die Variable `req.file.filename` kannst du auf den Dateinamen zugreifen und ihn beispielsweise in der Datenbank speichern."
 
