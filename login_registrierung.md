@@ -132,6 +132,6 @@ Ausserdem kann beim Eintragen von Daten in die Datenbank die ID der angemeldeten
 ```js
 await app.locals.pool.query(
   "INSERT INTO posts (user_id, titel, inhalt) VALUES ($1, $2, $3)",
-  [req.sesssion.userid, req.body.titel, req.body.inhalt]
+  [req.session.userid, req.body.titel, req.body.inhalt]
 );
 ```
