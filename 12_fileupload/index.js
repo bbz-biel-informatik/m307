@@ -14,15 +14,16 @@ app.get("/", async function (req, res) {
   res.render("start", {});
 });
 
-app.get("/new_post", async function (req, res) {    /* start=4 */
-  res.render("new_post", {});                       /* start=4 */
-});                                                 /* start=4 */
+app.get("/new_post", async function (req, res) {
+  res.render("new_post", {});
+});
 
+app.post("/create_post", async function (req, res) {
+  await app.locals.pool.query("INSERT INTO todos (text) VALUES ($1)", [req.body.text]);
 app.post("/create_post", upload.single('image'), async function (req, res) {                                                              /* start=5 */
-  const result = await app.locals.pool.query("INSERT INTO todos (text, dateiname) VALUES ($1, $2)", [req.body.text, req.file.filename]);  /* start=6 */
-  console.log(result);                                                                                                                    /* start=6 */
-  res.redirect("/");                                                                                                                      /* start=6 */
-});                                                                                                                                       /* start=5 */
+  await app.locals.pool.query("INSERT INTO todos (text, dateiname) VALUES ($1, $2)", [req.body.text, req.file.filename]);                 /* start=6 */
+  res.redirect("/");
+});
 
 /* Wichtig! Diese Zeilen müssen immer am Schluss der Website stehen! */
 app.listen(3010, () => {

@@ -10,11 +10,11 @@
 
     "Füge zuerst in der obersten Zeile der Datei index.js noch das Wort 'upload' ein.",
 
-    "Als erstes brauchen wir ein Formular und eine zugehörige Route, damit wir das Formular anzeigen können. Beachte, dass das Upload-Feld den `type` = `file` hat, und dass du wie im Beispiel den `enctype` angeben musst. Nur so kannst du Dateien hochladen.",
+    "Füge in das Formular das Dateifeld ein. Beachte, dass das Feld den `type` = `file` hat, und dass du wie im Beispiel den `enctype` angeben musst. Nur so kannst du Dateien hochladen.",
 
-    "Weiter brauchen wir eine Route, an die das Formular gesendet wird, und wo der Post in die Datenbank eingetragen wird. Beachte hier, dass der Teil `upload.single()` sehr wichtig ist. Dort muss der Name des File-Formularfeldes drinstehen! Ausserdem muss die URL im Formular mit der URL in index.js übereinstimmen.",
+    "Passe dann die index.js-Datei an. Füge zuerst im Code, der die Formulardaten in der DB speichert, den Teil `upload.single()` ein. Dort muss der Name des File-Formularfeldes drinstehen!",
 
-    "Die Datei wird automatisch im konfigurierten Ordner gespeichert. Über die Variable `req.file.filename` kannst du auf den Dateinamen zugreifen und ihn beispielsweise in der Datenbank speichern."
+    "Die Datei wird automatisch im Ordner `public` gespeichert. Über die Variable `req.file.filename` kannst du auf den Dateinamen zugreifen und ihn beispielsweise in der Datenbank speichern."
 
   ]
 }
